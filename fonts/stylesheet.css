@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('IntroRegularAlt.eot');
+    src: url('IntroRegularAlt.eot?#iefix') format('embedded-opentype'),
+        url('IntroRegularAlt.woff2') format('woff2'),
+        url('IntroRegularAlt.woff') format('woff'),
+        url('IntroRegularAlt.ttf') format('truetype'),
+        url('IntroRegularAlt.svg#IntroRegularAlt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
