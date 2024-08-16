@@ -109,6 +109,7 @@ $(document).ready(function () {
     if (!$(e.target).closest(".header, .header-burger").length) {
       $(".header").removeClass("active");
       $(".header-burger").removeClass("active");
+      $(".header-lang").removeClass("active");
     }
   });
   function wrapHeaderBlocks() {
