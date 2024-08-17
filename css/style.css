@@ -487,8 +487,10 @@ header .container {
 .last .last__title .btn-transp__back img {
   width: 220px;
 }
-.last .last__title .btn-transp {
+
+.last-btn-box {
   margin-left: 30px;
+  cursor: pointer;
 }
 .last .last__title .btn-transp__text {
   display: flex;
@@ -1063,6 +1065,90 @@ header {
   flex-wrap: wrap;
   width: 100%;
   flex: 0 0 auto;
+}
+.btn-transp__back::after {
+  background: url(../img/btn-back.gif) no-repeat center center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 50%;
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: 0.3s;
+  filter: brightness(1000%);
+}
+.btn-transp--stream:nth-child(2) {
+  position: absolute;
+  visibility: hidden;
+  transform: scale(1.2);
+  opacity: 0;
+}
+.last-content-slider__item {
+  position: relative;
+}
+.last-content-stream-btn,
+.last-content-slider-steam-play {
+  cursor: pointer;
+}
+.last-content-slider-stream .last-content-slider__item {
+  padding-bottom: 0;
+}
+.last-content-stream-btn img,
+.last-content-slider-steam-play img {
+  width: 83px;
+  position: absolute;
+  top: 50%;
+  opacity: 0.7;
+  transition: 0.3s;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.last-content-slider-steam-play img {
+  width: 60px;
+}
+.last-content-stream-btn:hover img,
+.last-content-slider-steam-play:hover img {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.last-btn-box.active .btn-transp--stream:nth-child(1) {
+  visibility: hidden;
+  transform: scale(1.2);
+}
+.last-btn-box.active .btn-transp--stream:nth-child(2) {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.last-content:last-child {
+  display: none;
+}
+.last-btn-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-transp.btn-transp--stream {
+  border-radius: 0;
+  overflow: visible;
+}
+.btn-transp.btn-transp--stream .btn-transp__back::after {
+  display: none;
+}
+.btn-transp {
+  border-radius: 100px;
+
+  overflow: hidden;
+}
+.btn-transp:hover .btn-transp__back::after {
+  opacity: 0.1;
+  width: 100%;
+  left: 0;
 }
 .support {
   padding: 195px 0;
@@ -1832,5 +1918,8 @@ header {
   }
   .last-content-slider .owl-nav {
     justify-content: center;
+  }
+  .last-btn-box {
+    margin: 0 auto;
   }
 }

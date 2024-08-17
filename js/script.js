@@ -92,6 +92,32 @@ $(document).ready(function () {
     $headerBack.height(newHeight);
   }
 
+  $(".last-btn-box").on("click", function () {
+    $(this).toggleClass("active");
+
+    // Находим текущий активный элемент (тот, который видим)
+    var $activeContent = $(".last-content:visible");
+
+    // Находим следующий элемент (если текущий первый, то следующий второй, и наоборот)
+    var $nextContent = $activeContent.siblings(".last-content").first();
+
+    // Плавно скрываем текущий элемент
+    $activeContent.fadeOut(200, function () {
+      // После скрытия текущего элемента устанавливаем у следующего display: flex и плавно показываем его
+      $nextContent.css("display", "flex").hide().fadeIn(200);
+    });
+
+    // Меняем текст в элементе .title-line
+    var $titleLine = $(".title-line");
+    var currentText = $titleLine.text().trim();
+
+    // Переключаем текст между "последние новости" и "стримы"
+    if (currentText === "последние новости") {
+      $titleLine.text("стримы");
+    } else {
+      $titleLine.text("последние новости");
+    }
+  });
   // Вызываем функцию при загрузке страницы
   updateHeaderBackHeight();
   $(".header-burger").on("click", function () {
