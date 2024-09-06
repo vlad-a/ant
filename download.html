@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ant Que</title>
+    <script>
+      const __config = {
+        timer: {
+          dd: [
+            ["день", "дня", "дней"],
+            ["час", "часа", "часов"],
+            ["минута", "минуты", "минут"],
+            ["секунда", "секунды", "секунд"],
+          ],
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="main main-download">
+      <div class="main-social">
+        <!-- item -->
+        <a href="#" class="main-social-item">
+          <div class="main-social-item__back">
+            <img src="img/social-item-back.png" alt="back" />
+          </div>
+          <div class="main-social-item__icon">
+            <img src="img/social-icon-1.png" alt="icon" />
+          </div>
+        </a>
+        <!-- item -->
+        <a href="#" class="main-social-item">
+          <div class="main-social-item__back">
+            <img src="img/social-item-back.png" alt="back" />
+          </div>
+          <div class="main-social-item__icon">
+            <img src="img/social-icon-2.png" alt="icon" />
+          </div>
+        </a>
+        <!-- item -->
+        <a href="#" class="main-social-item">
+          <div class="main-social-item__back">
+            <img src="img/social-item-back.png" alt="back" />
+          </div>
+          <div class="main-social-item__icon">
+            <img src="img/social-icon-3.png" alt="icon" />
+          </div> </a
+        ><!-- item -->
+        <a href="#" class="main-social-item">
+          <div class="main-social-item__back">
+            <img src="img/social-item-back.png" alt="back" />
+          </div>
+          <div class="main-social-item__icon">
+            <img src="img/social-icon-4.png" alt="icon" />
+          </div>
+        </a>
+      </div>
+      <div class="main-top">
+        <header class="header">
+          <div class="container">
+            <div class="main-countdown">
+              <div class="main-countdown__text d-flex">
+                <img src="img/angle-countdown-left.png" alt="left" />время до
+                открытия
+                <img src="img/angle-countdown-right.png" alt="right" />
+              </div>
+              <div class="main-countdown__box">
+                <div
+                  data-timer-start-time="2024-09-01 23:59:59"
+                  data-timer-time-zone="Europe/Moscow"
+                ></div>
+              </div>
+              <a href="#" class="btn-transp">
+                <div class="btn-transp__back">
+                  <img src="img/countdown-btn.png" alt="btn" />
+                </div>
+                <div class="btn-transp__text">interlude X100</div>
+              </a>
+            </div>
+            <div class="main-online">
+              <div class="main-online__logo">
+                <img src="img/online.png" alt="online" />
+              </div>
+              <!-- box -->
+              <div class="main-online-box">
+                <img
+                  src="img/online-box-back.png"
+                  alt="back"
+                  class="main-back-ob"
+                />
+                <div class="main-online-box__wrap">
+                  <div class="main-online-box__left">
+                    <div class="point">
+                      <div class="point__mode">ON</div>
+                      <svg
+                        class="round"
+                        viewbox="0 0 100 100"
+                        data-percent="75"
+                      >
+                        <circle cx="50" cy="50" r="40" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="main-online-box__right">
+                    <div class="main-online-box-right__server--name">
+                      Interlude
+                    </div>
+                    <div class="main-online-box-right__server--boost">
+                      Multiprof X500
+                    </div>
+                    <div class="main-online-box-right__server--online">
+                      Online: <span>5173</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn-transp">
+                <div class="btn-transp__back">
+                  <img src="img/online-btn.png" alt="btn" />
+                </div>
+                <div class="btn-transp__text">все сервера</div>
+              </a>
+            </div>
+            <div class="header__wrapper">
+              <div class="header-aside header-left">
+                <a href="#" class="header-logo">
+                  <img src="img/logo.png" alt="logo" />
+                </a>
+                <div class="header-lang">
+                  <div class="header-lang__top">
+                    <div class="header-lang-top__flag">
+                      <img src="img/ru-flag.png" alt="flag" />
+                    </div>
+                    <div class="header-lang-top__lang">RU</div>
+                    <div class="header-lang-top__angle">
+                      <img src="img/angle-down.png" alt="angle" />
+                    </div>
+                  </div>
+                  <div class="header-lang__dropdown">
+                    <!-- item -->
+                    <a href="#" class="header-lang-dropdown__item">
+                      <div class="header-lang-top__flag">
+                        <img src="img/ru-flag.png" alt="flag" />
+                      </div>
+                      <div class="header-lang-top__lang">RU</div>
+                    </a>
+                    <!-- item -->
+                    <a href="#" class="header-lang-dropdown__item">
+                      <div class="header-lang-top__flag">
+                        <img src="img/ru-flag.png" alt="flag" />
+                      </div>
+                      <div class="header-lang-top__lang">RU</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="header-center">
+                <nav class="header-center__nav">
+                  <ul class="header-center-nav__list">
+                    <li>
+                      <a href="#" class="active">главная</a>
+                    </li>
+                    <li><a href="#">регистрация</a></li>
+                    <li><a href="#">файлы</a></li>
+                    <li><a href="#">сообщество</a></li>
+                    <li><a href="#">о серверах</a></li>
+                    <li><a href="#">пожертвования</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-aside header-right">
+                <a href="#" class="btn-transp">
+                  <div class="btn-transp__back">
+                    <img src="img/transp-btn-back.png" alt="btn" />
+                  </div>
+                  <div class="btn-transp__text">личный кабинет</div>
+                </a>
+              </div>
+              <div class="header-burger">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="main-top-download">
+          <div class="container">
+            <div class="main-top-download__box">
+              <div class="main-top-download__logo">
+                <img src="img/logo-download.png" alt="logo" />
+              </div>
+              <a href="#" class="preview__btn">
+                <div class="preview-btn__back">
+                  <img src="img/download-top-btn-back.png" alt="back" />
+                </div>
+                <div class="preview-btn__text">создать аккаунт</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-bottom">
+        <section class="main-bottom__step">
+          <div class="container">
+            <div class="main-bottom-step__wrapper">
+              <!-- item -->
+              <div class="main-bottom-step__item">
+                <div class="main-bottom-step-item__title">
+                  шаг 1. <span> клиент игры</span>
+                </div>
+                <div class="main-bottom-step-item__text">
+                  Для подключения к серверу вам необходимо скачать и установить
+                  наш клиент и патч-файлы или скачать и запустить апдейтер!
+                </div>
+                <div class="main-bottom-step-item__list">
+                  <!-- item -->
+                  <div class="main-bottom-step-item-list__item mbsili">
+                    <div class="mbsili__left">
+                      <img src="img/download-item-01.png" alt="item" />
+                    </div>
+                    <a href="#" class="btn-transp">
+                      <div class="btn-transp__back">
+                        <img src="img/download-btn-back.png" alt="btn" />
+                      </div>
+                      <div class="btn-transp__text">Google Drive</div>
+                    </a>
+                  </div>
+                  <!-- item -->
+                  <div class="main-bottom-step-item-list__item mbsili">
+                    <div class="mbsili__left">
+                      <img src="img/download-item-02.png" alt="item" />
+                    </div>
+                    <a href="#" class="btn-transp">
+                      <div class="btn-transp__back">
+                        <img src="img/download-btn-back.png" alt="btn" />
+                      </div>
+                      <div class="btn-transp__text">Yandex Disk</div>
+                    </a>
+                  </div>
+                  <!-- item -->
+                  <div class="main-bottom-step-item-list__item mbsili">
+                    <div class="mbsili__left">
+                      <img src="img/download-item-03.png" alt="item" />
+                    </div>
+                    <a href="#" class="btn-transp">
+                      <div class="btn-transp__back">
+                        <img src="img/download-btn-back.png" alt="btn" />
+                      </div>
+                      <div class="btn-transp__text">TORRENT</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="main-bottom-step__item">
+                <div class="main-bottom-step-item__title">
+                  шаг 2. <span> updater файлов</span>
+                </div>
+                <div class="main-bottom-step-item__text">
+                  Для подключения к серверу вам необходимо скачать и установить
+                  наш клиент и патч-файлы или скачать и запустить апдейтер!
+                </div>
+                <div class="main-bottom-step-item__list">
+                  <!-- item -->
+                  <div class="main-bottom-step-item-list__item mbsili">
+                    <div class="mbsili__left">
+                      <img src="img/download-item-01.png" alt="item" />
+                    </div>
+                    <a href="#" class="btn-transp">
+                      <div class="btn-transp__back">
+                        <img src="img/download-btn-back.png" alt="btn" />
+                      </div>
+                      <div class="btn-transp__text">Google Drive</div>
+                    </a>
+                  </div>
+                  <!-- item -->
+                  <div class="main-bottom-step-item-list__item mbsili">
+                    <div class="mbsili__left">
+                      <img src="img/download-item-02.png" alt="item" />
+                    </div>
+                    <a href="#" class="btn-transp">
+                      <div class="btn-transp__back">
+                        <img src="img/download-btn-back.png" alt="btn" />
+                      </div>
+                      <div class="btn-transp__text">Yandex Disk</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="main-bottom-step__item">
+                <div class="main-bottom-step-item__title">
+                  шаг 3. <span> патч для сервера</span>
+                </div>
+                <div class="main-bottom-step-item__text">
+                  Для подключения к серверу вам необходимо скачать и установить
+                  наш клиент и патч-файлы или скачать и запустить апдейтер!
+                </div>
+                <div class="main-bottom-step-item__list">
+                  <!-- item -->
+                  <div class="main-bottom-step-item-list__item mbsili">
+                    <div class="mbsili__left">
+                      <img src="img/download-item-01.png" alt="item" />
+                    </div>
+                    <a href="#" class="btn-transp">
+                      <div class="btn-transp__back">
+                        <img src="img/download-btn-back.png" alt="btn" />
+                      </div>
+                      <div class="btn-transp__text">Google Drive</div>
+                    </a>
+                  </div>
+                  <!-- item -->
+                  <div class="main-bottom-step-item-list__item mbsili">
+                    <div class="mbsili__left">
+                      <img src="img/download-item-02.png" alt="item" />
+                    </div>
+                    <a href="#" class="btn-transp">
+                      <div class="btn-transp__back">
+                        <img src="img/download-btn-back.png" alt="btn" />
+                      </div>
+                      <div class="btn-transp__text">Yandex Disk</div>
+                    </a>
+                  </div>
+                  <!-- item -->
+                  <div class="main-bottom-step-item-list__item mbsili">
+                    <div class="mbsili__left">
+                      <img src="img/download-item-03.png" alt="item" />
+                    </div>
+                    <a href="#" class="btn-transp">
+                      <div class="btn-transp__back">
+                        <img src="img/download-btn-back.png" alt="btn" />
+                      </div>
+                      <div class="btn-transp__text">TORRENT</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__wrapper d-flex">
+              <div class="footer__copyrights">
+                2024 © Servers - All rights reserved
+              </div>
+              <div class="main-social">
+                <!-- item -->
+                <a href="#" class="main-social-item">
+                  <div class="main-social-item__back">
+                    <img src="img/social-item-back.png" alt="back" />
+                  </div>
+                  <div class="main-social-item__icon">
+                    <img src="img/social-icon-1.png" alt="icon" />
+                  </div>
+                </a>
+                <!-- item -->
+                <a href="#" class="main-social-item">
+                  <div class="main-social-item__back">
+                    <img src="img/social-item-back.png" alt="back" />
+                  </div>
+                  <div class="main-social-item__icon">
+                    <img src="img/social-icon-2.png" alt="icon" />
+                  </div>
+                </a>
+                <!-- item -->
+                <a href="#" class="main-social-item">
+                  <div class="main-social-item__back">
+                    <img src="img/social-item-back.png" alt="back" />
+                  </div>
+                  <div class="main-social-item__icon">
+                    <img src="img/social-icon-3.png" alt="icon" />
+                  </div> </a
+                ><!-- item -->
+                <a href="#" class="main-social-item">
+                  <div class="main-social-item__back">
+                    <img src="img/social-item-back.png" alt="back" />
+                  </div>
+                  <div class="main-social-item__icon">
+                    <img src="img/social-icon-4.png" alt="icon" />
+                  </div>
+                </a>
+              </div>
+              <a
+                href="https://unsimpleworld.com/"
+                target="_blank"
+                class="footer-developed"
+              >
+                <img src="img/unsimple-logo.png" alt="logo" />
+                <div class="footer-developed__text">
+                  <div class="footer-developed-text__item">Developed by</div>
+                  <div class="footer-developed-text__item">Unsimple world</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/luxon.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
