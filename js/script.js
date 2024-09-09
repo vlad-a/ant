@@ -271,4 +271,25 @@ $(document).ready(function () {
     roundCircum = 2 * roundRadius * Math.PI,
     roundDraw = (roundPercent * roundCircum) / 100;
   $round.css("stroke-dasharray", roundDraw + " 999");
+
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Сохраняем элементы в переменные
+    var lastElement = $(".last");
+    var serverElement = $(".server");
+
+    // Меняем местами элементы
+    lastElement.insertBefore(serverElement); // Перемещаем .last перед .server
+    serverElement.insertBefore(lastElement); // Перемещаем .server перед .last
+  }
+  var button = `
+	<a href="#" class="btn-transp btn-transp-rating">
+			<div class="btn-transp__back">
+					<img src="img/all-btn.png" alt="btn">
+			</div>
+			<div class="btn-transp__text">полный рейтинг</div>
+	</a>
+`;
+
+  // Вставляем кнопку после элемента .rating-tabs-content
+  $(".rating-tabs-content").after(button);
 });
