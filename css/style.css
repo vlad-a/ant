@@ -1385,6 +1385,12 @@ footer .main-social {
 .support-items {
   margin-top: 80px;
 }
+.btn-transp-rating {
+  display: none;
+}
+.rating-tabs-top .btn-transp-rating {
+  display: flex;
+}
 @media screen and (max-width: 2050px) {
   .main-countdown {
     left: 75px;
@@ -2005,6 +2011,9 @@ footer .main-social {
     gap: 20px;
     align-items: flex-start;
   }
+  .header-right {
+    justify-content: center;
+  }
   .title-line {
     font-size: 31px;
   }
@@ -2123,6 +2132,12 @@ footer .main-social {
   }
   .preview__wrapper {
     margin-top: 30px;
+  }
+  .btn-transp-rating {
+    display: flex;
+  }
+  .rating-tabs-top .btn-transp-rating {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
